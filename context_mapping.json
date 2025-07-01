@@ -1,0 +1,38 @@
+{
+  "context_mapping": {
+    "audiences": {
+      "students": {
+        "tone": "instructional",
+        "focus": "clarity, examples, learning outcomes",
+        "summary_length": "150-200 words",
+        "framework_type": "study_guide"
+      },
+      "professionals": {
+        "tone": "formal",
+        "focus": "actionable insights, strategies",
+        "summary_length": "200-250 words",
+        "framework_type": "workflow"
+      },
+      "experts": {
+        "tone": "technical",
+        "focus": "details, methodologies",
+        "summary_length": "250-300 words",
+        "framework_type": "decision_tree"
+      }
+    },
+    "domains": {
+      "education": {
+        "keywords": ["learning", "tutorial", "lecture"],
+        "framework_type": "study_guide"
+      },
+      "business": {
+        "keywords": ["strategy", "management", "marketing"],
+        "framework_type": "workflow"
+      },
+      "technology": {
+        "keywords": ["coding", "AI", "technical"],
+        "framework_type": "decision_tree"
+      }
+    }
+  }
+}
