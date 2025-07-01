@@ -1,21 +1,16 @@
 # Error Handling Guidelines
 
-## Invalid or Private Video
-- **Error**: Video URL is invalid, private, or restricted.
-- **Action**: Return message: "Unable to access video. Please ensure the URL is valid and the video is public."
-- **Fallback**: Prompt user to provide a manual transcript or alternative URL.
+## No Transcript Provided
+- Prompt: "Please paste the video transcript or provide key points for summarization."
+- Fallback: Generate a summary based on user-provided key points or metadata, with a disclaimer: "Summary based on limited input. Provide a transcript for improved accuracy."
 
-## No Subtitles Available
-- **Error**: Video lacks subtitles or transcript.
-- **Action**: Use speech-to-text (e.g., pydub or Google Cloud Speech-to-Text) to generate a transcript from audio.
-- **Fallback**: Inform user: "No subtitles available. Audio-based transcript generated. Accuracy may vary."
+## Unclear Context
+- Prompt: "Could you specify the audience (e.g., students, professionals), purpose (e.g., study guide, workflow), or tone (e.g., conversational, formal)?"
+- Fallback: Use default context (general audience, conversational tone, general-purpose summary).
 
-## API Rate Limit Exceeded
-- **Error**: Gemini API rate limit (e.g., 50 requests/day) exceeded.
-- **Action**: Cache recent transcripts/metadata and retry after delay.
-- **Fallback**: Suggest user upgrade to a paid plan or wait for reset.
+## Incomplete Framework Requirements
+- Prompt: "Please clarify the framework type (e.g., workflow, study guide) or specific requirements."
+- Fallback: Generate a default framework (e.g., workflow) with a note to refine.
 
-## Unsupported Language
-- **Error**: Video transcript is in an unsupported language.
-- **Action**: Use Gemini’s translation capabilities to convert to English before summarization.
-- **Fallback**: Inform user: "Unsupported language detected. Translation applied. Results may vary."
+## Output Too Long
+- If output exceeds Gemini web app limits, truncate and prompt: "Output truncated. Would you like a shorter summary or specific sections?"
