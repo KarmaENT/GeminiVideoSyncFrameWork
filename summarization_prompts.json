@@ -3,22 +3,22 @@
     {
       "id": "general_summary",
       "description": "General-purpose summary for quick insights",
-      "prompt": "Summarize the key points of this YouTube video [URL] in 150 words, capturing the main ideas, arguments, and conclusions. Tailor the summary for a general audience in a clear, conversational tone."
+      "prompt": "Summarize the following transcript or key points: [transcript] in 150 words, capturing the main ideas, arguments, and conclusions. Tailor for a general audience in a conversational tone."
     },
     {
       "id": "educational_summary",
       "description": "Summary for educational use, focusing on learning outcomes",
-      "prompt": "Summarize this YouTube video [URL] in 200 words, emphasizing key concepts, examples, and learning outcomes. Tailor for students at a [beginner/intermediate/advanced] level in a clear, instructional tone."
+      "prompt": "Summarize the following transcript: [transcript] in 200 words, emphasizing key concepts, examples, and learning outcomes. Tailor for students at a [beginner/intermediate/advanced] level in an instructional tone."
     },
     {
       "id": "professional_summary",
       "description": "Summary for professional use, focusing on actionable insights",
-      "prompt": "Summarize this YouTube video [URL] in 250 words, highlighting actionable insights, strategies, and key takeaways. Tailor for professionals in [industry/domain] with a formal tone."
+      "prompt": "Summarize the following transcript: [transcript] in 250 words, highlighting actionable insights, strategies, and key takeaways. Tailor for professionals in [industry/domain] with a formal tone."
     },
     {
       "id": "technical_summary",
-      "description": "Summary for technical audiences, focusing on details and specifics",
-      "prompt": "Summarize this YouTube video [URL] in 300 words, focusing on technical details, methodologies, and key findings. Tailor for experts in [domain] with a precise, technical tone."
+      "description": "Summary for technical audiences, focusing on details",
+      "prompt": "Summarize the following transcript: [transcript] in 300 words, focusing on technical details, methodologies, and key findings. Tailor for experts in [domain] with a technical tone."
     }
   ]
 }
