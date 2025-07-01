@@ -1,0 +1,56 @@
+{
+  "framework_templates": [
+    {
+      "id": "workflow_framework",
+      "description": "Workflow for implementing processes from video content",
+      "template": {
+        "type": "workflow",
+        "structure": {
+          "title": "Workflow: [Video Topic]",
+          "steps": [
+            {"step_id": 1, "description": "", "inputs": [], "outputs": []},
+            {"step_id": 2, "description": "", "inputs": [], "outputs": []}
+          ],
+          "metadata": {
+            "source_video": "[URL]",
+            "generated_date": "[Timestamp]"
+          }
+        }
+      }
+    },
+    {
+      "id": "study_guide_framework",
+      "description": "Study guide for educational content",
+      "template": {
+        "type": "study_guide",
+        "structure": {
+          "title": "Study Guide: [Video Topic]",
+          "key_concepts": [],
+          "questions": [],
+          "resources": [],
+          "metadata": {
+            "source_video": "[URL]",
+            "generated_date": "[Timestamp]"
+          }
+        }
+      }
+    },
+    {
+      "id": "decision_tree_framework",
+      "description": "Decision tree for strategic or analytical content",
+      "template": {
+        "type": "decision_tree",
+        "structure": {
+          "title": "Decision Tree: [Video Topic]",
+          "nodes": [
+            {"node_id": 1, "question": "", "options": [], "next_nodes": []}
+          ],
+          "metadata": {
+            "source_video": "[URL]",
+            "generated_date": "[Timestamp]"
+          }
+        }
+      }
+    }
+  ]
+}
